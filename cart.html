@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Blink Stuff</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="fotologoo.png" width="130px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><i class='bx bx-shopping-bag'></i></a>
+                <i class='bx bx-menu' onclick="menutoggle()"></i>
+            </div>
+        </div>
+
+<!------------ cart item details ------------>
+    <div class="small-container">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <a href="products-detail.html"><img src="foto5.jpg"></a>
+                        <div>
+                            <p>Converse CTAS Smile Purple</p>
+                            <small>Price: Rp.330.000</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>Rp.330.000</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="foto6.jpg">
+                        <div>
+                            <p>Boots Creamy</p>
+                            <small>Price: Rp.357.000</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>Rp.357.000</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="foto7.jpg">
+                        <div>
+                            <p>Two Town Colour</p>
+                            <small>Price: Rp.245.000</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>Rp.245.000</td>
+            </tr>
+        </table>
+
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>Rp.932.000</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>Rp.12.000</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>Rp.944.000</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+        
+
+
+<!------------ footer ------------>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="logo1.png">
+                        <img src="logo2.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="fotologoo.png">
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and<br>Benefits of Sports Accessible to the Many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <a href="https://www.facebook.com/fajrin.nada.9"><li>Facebook</li></a>
+                        <a href="https://www.instagram.com/khufanada/"><li>Instagram</li></a>
+                        <a href="https://www.tiktok.com/@ochtenddauw"><li>TikTok</li></a>
+                        <a href="https://www.youtube.com/channel/UCAfa18PbxErMo1hScATB4SQ"><li>YouTube</li></a>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2021</p>
+        </div>
+    </div>
+
+    <!------------ js for toggle menu ------------>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+        
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px"
+                }
+            else
+                {
+                    MenuItems.style.maxHeight = "0px"
+                }
+        }
+    </script>
+
+</body>
+</html>

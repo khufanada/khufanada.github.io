@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blink Stuff | Ecommerce Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="fotologoo.png" width="130px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><i class='bx bx-shopping-bag'></i></a>
+                <i class='bx bx-menu' onclick="menutoggle()"></i>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>GIVE YOUR WORKOUT<br>A NEW STYLE!</h1>
+                    <p>Succses isn't always about greatness. It's about consistency. Consistent<br>hard work gains success. Greatness will come.</p>
+                    <a href="products.html" class="btn">Explore Now &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="foto1.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------- featured categories ------------>
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="foto2.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="foto3.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="foto4.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------- featured products ------------>
+    <div class="small-container">
+        <h2 class="tittle">Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <a href="products-detail.html"><img src="foto5.jpg"></a>
+                <a href="products-detail.html"><h4>Converse CTAS Smile Purple</h4></a>
+                <div class="rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <p>Rp.330.000</p>
+            </div>
+            <div class="col-4">
+                <a href="products-detail-2.html"><img src="foto6.jpg"></a>
+                <a href="products-detail-2.html"><h4>Boots Creamy</h4></a>
+                <div class="rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <p>Rp.357.000</p>
+            </div>
+            <div class="col-4">
+                <img src="foto7.jpg">
+                <h4>Two Town Colour</h4>
+                <div class="rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <p>Rp.245.000</p>
+            </div>
+            <div class="col-4">
+                <img src="foto8.jpg">
+                <h4>Boots Blacky</h4>
+                <div class="rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <p>Rp.357.000</p>
+            </div>
+        </div>
+
+        <h2 class="tittle">Latest Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="foto9.jpg">
+                <h4>Slippers Square Choco</h4>
+                <div class="rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <p>Rp.126.000</p>
+            </div>
+            <div class="col-4">
+                <img src="foto10.jpg">
+                <h4>Slippers Oval Pinkis</h4>
+                <div class="rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bx-star'></i>
+                </div>
+                <p>Rp.126.000</p>
+            </div>
+            <div class="col-4">
+                <img src="foto11.jpg">
+                <h4>Slippers Square Aurora</h4>
+                <div class="rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bx-star'></i>
+                </div>
+                <p>Rp.126.000</p>
+            </div>
+            <div class="col-4">
+                <img src="foto12.jpg">
+                <h4>Slippers Oval Sky</h4>
+                <div class="rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                    <i class='bx bx-star'></i>
+                </div>
+                <p>Rp.126.000</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="foto13.jpg">
+                <h4>Hight Moonlight Sneakers</h4>
+                <div class="rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <p>Rp.245.000</p>
+            </div>
+            <div class="col-4">
+                <img src="foto14.jpg">
+                <h4>Sneakers Snow</h4>
+                <div class="rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                    <i class='bx bx-star'></i>
+                </div>
+                <p>Rp.169.000</p>
+            </div>
+            <div class="col-4">
+                <img src="foto15.jpg">
+                <h4>Hight Snow Sneakers</h4>
+                <div class="rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bx-star'></i>
+                </div>
+                <p>Rp.245.000</p>
+            </div>
+            <div class="col-4">
+                <img src="foto16.jpg">
+                <h4>Sneakers Snow Butterfly</h4>
+                <div class="rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <p>Rp.169.000</p>
+            </div>
+        </div>
+    </div>
+
+<!----------- offer ------------>
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="fotobest.png" class="offer-img">
+                </div>
+                <div class="col-2">
+                    <p>Exclusively Available on Blink Stuff</p>
+                    <h1>Converse Chuck Taylor All Star</h1>
+                    <small>Paneled canvas and coloring midsole bring a vibrant edge to your everyday Chuck, while a platform sole gives you a boots. Stand tall</small>
+                    <a href="products-detail.html" class="btn">Buy Now &#8594</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!------------ testimonial ------------>
+    <div class="testimonial">
+        <div class="small-container">
+            <h2 class="tittle">Testimonial</h2>
+            <div class="row">
+                <div class="col-3">
+                    <i class='bx bxs-quote-left'></i>
+                    <p>Terima kasih buat Blink Stuff. Barang sudah sampai dengan selamat di Malang. Recomended Seller deh.</p>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                    </div>
+                    <img src="user1.jpg">
+                    <h3>Angelina</h3>
+                </div>
+                <div class="col-3">
+                    <i class='bx bxs-quote-left'></i>
+                    <p>Sepatu Converse Chuck Taylor All Star sudah sampai di rumah dengan baik tanpa ada cacat sedikitpun. Terima Kasih</p>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                    </div>
+                    <img src="user2.jpg">
+                    <h3>Victoria</h3>
+                </div>
+                <div class="col-3">
+                    <i class='bx bxs-quote-left'></i>
+                    <p>Pertama kali beli sepatu di toko ini. Sangat seusai dengan ekspektasi. Next bakalan order lagi.</p>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                    </div>
+                    <img src="user3.jpg">
+                    <h3>Imelda</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!------------ brands ------------>
+    <div class="brands">
+        <div class="small-contain">
+            <h2 class="tittle">Our Associates</h2>
+            <div class="row">
+                <div class="col-5">
+                    <img src="brands1.png">
+                </div>
+                <div class="col-5">
+                    <img src="brands2.png">
+                </div>
+                <div class="col-5">
+                    <img src="brands3.png">
+                </div>
+                <div class="col-5">
+                    <img src="brands4.png">
+                </div>
+                <div class="col-5">
+                    <img src="brands5.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------ footer ------------>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="logo1.png">
+                        <img src="logo2.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="fotologoo.png">
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and<br>Benefits of Sports Accessible to the Many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <a href="https://www.facebook.com/fajrin.nada.9"><li>Facebook</li></a>
+                        <a href="https://www.instagram.com/khufanada/"><li>Instagram</li></a>
+                        <a href="https://www.tiktok.com/@ochtenddauw"><li>TikTok</li></a>
+                        <a href="https://www.youtube.com/channel/UCAfa18PbxErMo1hScATB4SQ"><li>YouTube</li></a>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2021</p>
+        </div>
+    </div>
+
+    <!------------ js for toggle menu ------------>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+        
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px"
+                }
+            else
+                {
+                    MenuItems.style.maxHeight = "0px"
+                }
+        }
+    </script>
+
+</body>
+</html>
